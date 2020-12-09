@@ -1,0 +1,25 @@
+.btn {
+    width: 160px;
+    height: 45px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    border: none;
+    text-transform: uppercase;
+    color: var(--text-color-white);
+    border-radius: 50px;
+    background-color: var(--main-color);
+    transition: all .3s;
+    &:hover {
+        background-color: #dc5238;
+    }
+    &_medium {
+        width: 180px;
+    }
+    &_big {
+        width: 230px;
+        height: 57px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+}

@@ -1,0 +1,42 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 23px;
+    list-style-type: none;
+    &__item {
+        border-right: 1px dotted rgba($color: #ffffff, $alpha: 0.4);
+        padding: 0 12px 0 12px;
+        &:last-child {
+            border-right: none;
+        }
+    }
+    &__link {
+        position: relative;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 23px;
+        color: var(--text-color-white);
+        transition: all .3s;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            top: 23px;
+            left: 0;
+            background: var(--main-color);
+            transition: all .3s;
+        }
+        &:hover {
+            text-decoration: none;
+            color: var(--main-color);
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+}
+.hamburger {
+    display: none;
+}

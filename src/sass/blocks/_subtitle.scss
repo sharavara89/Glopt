@@ -1,0 +1,10 @@
+.subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: center;
+    color: #2e2e2e;
+    &_white {
+        color: var(--text-color-white);
+    }
+}

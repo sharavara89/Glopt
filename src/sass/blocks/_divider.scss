@@ -1,0 +1,9 @@
+.divider {
+    margin: 20px auto 17px auto;
+    width: 148px;
+    height: 1px;
+    background-color: var(--main-color);
+    &_mt25 {
+        margin-top: 25px;
+    }
+}
