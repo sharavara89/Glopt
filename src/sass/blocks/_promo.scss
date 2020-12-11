@@ -1,7 +1,7 @@
 .promo {
     position: relative;
     min-height: 100vh;
-    padding: 22px 0 82px 0;
+    padding: 20px 0 80px 0;
     background: url('../img/main_bg.jpg') center (center / cover) no-repeat;
     &__title {
         text-align: center;
@@ -56,6 +56,7 @@
         grid-auto-rows: minmax(135px, auto);
         column-gap: 33px;
         justify-content: center;
+        margin-bottom: 40px;
     }
     &__item {
         display: grid;
@@ -75,9 +76,7 @@
         }
     }
     &__button {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 82px;
+        display: block;
+        margin: 0 auto;
     }
 }

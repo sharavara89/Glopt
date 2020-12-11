@@ -1,0 +1,27 @@
+.phone {
+    display: grid;
+    grid-template: 45px / repeat(2, 160px);
+    column-gap: 20px;
+    &__wrapper {
+        display: grid;
+        grid-row: 1fr;
+        place-items: center end;
+    }
+    &__subheader {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 300;
+        color: var(--text-color-white);
+    }
+    &__number {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 700;
+        color: var(--text-color-white);
+        transition: all .3s;
+        &:hover {
+            text-decoration: none;
+            color: var(--main-color);
+        }
+    }
+}

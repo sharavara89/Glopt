@@ -1,5 +1,6 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/font';
+@import 'libs/slick';
 
 @import 'base/vars';
 @import 'base/mixins';
@@ -26,10 +27,28 @@ p, ol, ul, li, h1, h2, h3, h4, h5, h6 {
 @import 'blocks/subtitle';
 @import 'blocks/divider';
 @import 'blocks/header';
+@import 'blocks/phone';
 @import 'blocks/advantages';
 @import 'blocks/work';
 @import 'blocks/agent';
 @import 'blocks/price';
 @import 'blocks/managers';
+@import 'blocks/consultation';
+@import 'blocks/scheme';
+@import 'blocks/reviews';
+@import 'blocks/contact';
 
 @import 'blocks/media';
+
+a, input, button {
+    &:focus{
+        outline-color: var(--main-color);
+    }
+}
+
+input, textarea {
+    outline: none;
+    &:focus {
+        border: 2px solid var(--main-color);
+    }
+}
