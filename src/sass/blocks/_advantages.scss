@@ -1,7 +1,6 @@
 .advantages {
-    min-height: 590px;
-    background-color: #f3f3f3;
     padding: 58px 0 50px 0;
+    background-color: #f3f3f3;
     &__items {
         display: grid;
         grid-template: repeat(4, minmax(62px, auto)) / repeat(2, 1fr);
@@ -11,7 +10,7 @@
     }
     &__item {
         display: grid;
-        grid-template: 1fr / 65px 1fr;
+        grid-template: 1fr / 52px 1fr;
         column-gap: 20px;
         &-icon {
             justify-self: start;

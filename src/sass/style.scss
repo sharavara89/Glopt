@@ -20,14 +20,15 @@ p, ol, ul, li, h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-@import 'blocks/promo';
-@import 'blocks/menu';
-@import 'blocks/button';
+@import 'blocks/logo';
 @import 'blocks/title';
 @import 'blocks/subtitle';
 @import 'blocks/divider';
-@import 'blocks/header';
+@import 'blocks/button';
 @import 'blocks/phone';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/promo';
 @import 'blocks/advantages';
 @import 'blocks/work';
 @import 'blocks/agent';
@@ -36,9 +37,12 @@ p, ol, ul, li, h1, h2, h3, h4, h5, h6 {
 @import 'blocks/consultation';
 @import 'blocks/scheme';
 @import 'blocks/reviews';
-@import 'blocks/contact';
+@import 'blocks/questions';
+@import 'blocks/location';
+@import 'blocks/footer';
+@import 'blocks/anchor';
 
-@import 'blocks/media';
+@import 'media';
 
 a, input, button {
     &:focus{
@@ -49,6 +53,6 @@ a, input, button {
 input, textarea {
     outline: none;
     &:focus {
-        border: 2px solid var(--main-color);
+        border: 1px solid var(--main-color);
     }
 }

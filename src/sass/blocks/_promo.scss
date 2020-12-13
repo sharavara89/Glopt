@@ -1,7 +1,7 @@
 .promo {
     position: relative;
     min-height: 100vh;
-    padding: 20px 0 80px 0;
+    padding: 132px 0 80px 0;
     background: url('../img/main_bg.jpg') center (center / cover) no-repeat;
     &__title {
         text-align: center;
@@ -9,7 +9,6 @@
         line-height: 24px;
         font-weight: 300;
         color: var(--text-color-white);
-        margin-top: 9px;
     }
     &__subtitle {
         font-family: "Roboto Condensed";
@@ -32,12 +31,12 @@
         margin-top: 9px;
     }
     &__divider {
-    margin: 38px 165px 30px 165px;
-    display: grid;
-    grid-template: 10px / 1fr 10px 1fr;
-    column-gap: 10px;
-    justify-content: center;
-    align-items: center;
+        margin: 38px 165px 30px 165px;
+        display: grid;
+        grid-template: 10px / 1fr 10px 1fr;
+        column-gap: 10px;
+        justify-content: center;
+        align-items: center;
         &-line {
             width: 100%;
             height: 1px;

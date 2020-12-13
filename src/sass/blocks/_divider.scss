@@ -1,7 +1,8 @@
 .divider {
-    margin: 20px auto 17px auto;
+    margin: 20px auto 17px;
     width: 148px;
     height: 1px;
+    border: none;
     background-color: var(--main-color);
     &_mt25 {
         margin-top: 25px;

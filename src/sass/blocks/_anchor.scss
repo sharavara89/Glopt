@@ -1,0 +1,19 @@
+.anchor {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 25px;
+    width: 45px;
+    height: 45px;
+    z-index: 100;
+    border: 1px solid var(--main-color);
+    border-radius: 100%;
+    transition: all .3s;
+    &:hover {
+        transform: rotate(180deg);
+    }
+    img {
+        width: 100%;
+    }
+    
+}

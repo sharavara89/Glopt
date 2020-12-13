@@ -1,0 +1,51 @@
+.location {
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    &__map {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    &__nameplate {
+        position: absolute;
+        padding: 28px 40px 30px;
+        top: 50%;
+        left: 55%;
+        transform: translateY(-50%);
+        width: 310px;
+        height: 158px;
+        text-align: left;
+        background-color: #ffffff;
+        border-radius: 5px;
+        z-index: 10;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-right: 20px solid #ffffff;
+            border-bottom: 20px solid transparent;
+        }
+        &-text {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            text-align: left;
+            color: #3a3a3a;
+            span {
+                font-size: 16px;
+                font-weight: 700;
+                color: var(--main-color);
+            }
+            a {
+                text-decoration: underline;
+                color: var(--main-color);
+            }
+        }
+    }
+}
