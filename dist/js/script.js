@@ -67,10 +67,10 @@ $(document).ready(function () {
 
     $('input[name=phone]').mask("+7 (999) 999-9999");
 
-    //Smoth scroll and pageup
+    //Anchor, smoth scroll and pageup
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 1300) {
+        if ($(this).scrollTop() > 1200) {
             $('.anchor').fadeIn();
         } else {
             $('.anchor').fadeOut();

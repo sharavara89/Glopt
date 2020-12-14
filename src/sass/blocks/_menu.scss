@@ -18,22 +18,23 @@
         font-weight: 500;
         line-height: 23px;
         color: var(--text-color-white);
-        transition: all .3s;
+        transition: all .25s;
         &:before {
             content: '';
             position: absolute;
-            width: 0;
             height: 1px;
+            width: 100%;
             top: 23px;
             left: 0;
             background: var(--main-color);
-            transition: all .3s;
+            transition: opacity .25s ease-in-out;
+            opacity: 0;
         }
         &:hover {
             text-decoration: none;
             color: var(--main-color);
             &:before {
-                width: 100%;
+                opacity: 1;
             }
         }
     }
