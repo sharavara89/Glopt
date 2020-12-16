@@ -74,7 +74,7 @@
             }
         }
     }
-    &_mini {
+    &_thanks {
         width: 380px;
         min-height: 140px;
     }
@@ -90,4 +90,8 @@
         font-weight: 300;
         color: red;
     }
+}
+
+#thanks {
+    display: none;
 }

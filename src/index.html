@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Dmytro Sharavara">
 
-    <!-- Primary Meta Tags -->
+<!-- Primary Meta Tags -->
     <title>Global Opt</title>
     <meta name="title" content="Global Opt">
     <meta name="description" content="This web-page was made by Dmytro Sharavara as a part of Udemy web-developer courses final . The author provides the site for informational purposes as part of his own portfolio.">
 
-    <!-- Open Graph / Facebook -->
+<!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://metatags.io/">
     <meta property="og:title" content="Global Opt">
     <meta property="og:description" content="This web-page was made by Dmytro Sharavara as a part of Udemy web-developer courses final . The author provides the site for informational purposes as part of his own portfolio.">
     <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
-    <!-- Twitter -->
+<!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://metatags.io/">
     <meta property="twitter:title" content="Global Opt">
     <meta property="twitter:description" content="This web-page was made by Dmytro Sharavara as a part of Udemy web-developer courses final . The author provides the site for informational purposes as part of his own portfolio.">
     <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
     
-    <!-- Favicon -->
+<!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
@@ -48,13 +48,15 @@
 </head>
 
 <body>
+<!-- Header -->
     <header id="anchor" class="header">
         <div class="container">
             <div class="header__wrapper">
+<!-- Logo -->
                 <a href="#" class="logo">
                     <img src="img/logo.png" alt="logo">
                 </a>
-        
+<!-- Navigation, menu -->
                 <nav>
                     <ul class="menu">
                         <li class="menu__item"><a href="#advantages" class="menu__link">Преимущества</a></li>
@@ -70,7 +72,7 @@
                         <span></span>
                     </div>
                 </nav>
-        
+<!-- Phone block -->
                 <div class="phone">
                     <div class="phone__wrapper">
                         <div class="phone__subheader">Есть вопросы?</div>
@@ -82,6 +84,7 @@
         </div>
     </header>
 
+<!-- Promo section -->
     <section class="promo">
         <div class="container">
 
@@ -126,6 +129,7 @@
         </div>
     </section>
 
+<!-- Advantages section -->
     <section id="advantages" class="advantages">
         <div class="container">
             <h2 class="title">Преимущества работы с GlobalOpt</h2>
@@ -207,6 +211,7 @@
         </div>
     </section>
 
+<!-- Work section -->
     <section id="work" class="work">
         <div class="container">
             <h2 class="title">Наша работа - больше чем просто доставка</h2>
@@ -248,6 +253,7 @@
         </div>
     </section>
 
+<!-- Agent section -->
     <section class="agent">
         <div class="container">
             <div class="agent__circle">
@@ -261,6 +267,7 @@
         </div>
     </section>
 
+<!-- Prise and cards section -->
     <section id="price" class="price">
         <div class="container">
             <h2 class="title">Цены на любой вариант доставки</h2>
@@ -334,7 +341,7 @@
         </div>
     </section>
 
-    <!-- Consulatation -->
+<!-- Consulatation -->
     <section class="consultation">
         <div class="container">
             <h2 class="consultation__title">Заказать бесплатную консультацию</h2>
@@ -344,9 +351,17 @@
                     <img src="icons/consultation.svg" alt="consutation" class="consultation__circle-icon">
                 </div>
 
-                <input name="name" placeholder="Ваше имя..." type="text">
-                <input name="phone" placeholder="Ваш номер телефона...">
-                <input name="email" placeholder="Ваш e-mail..." type="email">
+                <div class="consultation__form-wrapper">
+                    <div class="consultation__form-items">
+                        <input name="name" placeholder="Ваше имя..." type="text">
+                    </div>
+                    <div class="consultation__form-items">
+                        <input name="phone" placeholder="Ваш номер телефона...">
+                    </div>
+                    <div class="consultation__form-items">
+                        <input name="email" placeholder="Ваш e-mail..." type="email">
+                    </div>
+                </div>
 
                 <div class="consultation__submit">
                     <button class="btn btn_medium">Отправить заявку</button>
@@ -355,6 +370,7 @@
         </div>
     </section>
 
+<!-- Managers section -->
     <section class="managers">
         <div class="container">
             <div class="managers__circle">
@@ -368,6 +384,7 @@
         </div>
     </section>
 
+<!-- Scheme section-->
     <section id="scheme" class="scheme">
         <div class="container">
             <div class="title">Схема работы с нами</div>
@@ -432,7 +449,7 @@
         </div>
     </section>
 
-    <!-- Reviews -->
+<!-- Reviews, slider -->
     <section id="reviews" class="reviews">
         <h2 class="title">отзывы наших клиентов</h2>
         <hr class="divider"></hr>
@@ -483,7 +500,7 @@
         </div>
     </section>
 
-    <!-- Questions -->
+<!-- Questions section -->
     <section class="questions">
         <div class="container">
             <div class="questions__form">
@@ -492,11 +509,19 @@
                     <span>Напишите нам!</span>
                 </h2>
 
-                <form id="questions__form" action="#" class="questions__form-items">
-                    <input required id="name" name="name" type="text" placeholder="Ваше имя...">
-                    <input required id="phone" name="phone" placeholder="Ваш номер телефона...">
-                    <input required id="email" name="email" type="email" placeholder="Ваш e-mail...">
-                    <textarea name="text" id="text" placeholder="Сообщение..."></textarea>
+                <form id="questions__form" class="questions__form-wrapper" action="#">
+                    <div class="questions__form-items">
+                        <input required id="name" name="name" type="text" placeholder="Ваше имя...">
+                    </div>
+                    <div class="questions__form-items">
+                        <input required id="phone" name="phone" placeholder="Ваш номер телефона...">
+                    </div>
+                    <div class="questions__form-items">
+                        <input required id="email" name="email" type="email" placeholder="Ваш e-mail...">
+                    </div>
+                    <div class="questions__form-textarea">
+                        <textarea name="text" id="text" placeholder="Сообщение..."></textarea>
+                    </div>
     
                     <div class="questions__form-submit">
                         <button class="btn btn_medium">Отправить заявку</button>
@@ -507,7 +532,7 @@
         </div>
     </section>
 
-    <!-- Location, map -->
+<!-- Location, map -->
     <section id="contacts" class="location">
         <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.6063717385805!2d37.62502931557661!3d55.74796799983279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTUwMzU!5e0!3m2!1sru!2spl!4v1607714826210!5m2!1sru!2spl" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <div class="location__nameplate">
@@ -521,7 +546,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+<!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -555,7 +580,7 @@
         </div>
     </footer>
 
-    <!-- Callback windows -->
+<!-- Callback windows -->
     <div class="overlay">
         <div id="callback" class="callback">
             <div class="callback__close">
@@ -584,11 +609,12 @@
         </div>
     </div>
 
-    <!-- Anchor -->
+<!-- Anchor -->
     <a href="#anchor" class="anchor">
         <img src="icons/anchor.svg" alt="anchor">
     </a>
 
+<!-- JS Scripts -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
