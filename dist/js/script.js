@@ -30,6 +30,10 @@ $(document).ready(function () {
 			}
         ]
     });
+
+    //Masked phone input
+
+    $('input[name=phone]').mask("+7 (999) 999-9999");
     
     //Validation Plugin
 	
@@ -62,10 +66,34 @@ $(document).ready(function () {
 
     validateForms('#consultation__form');
     validateForms('#questions__form');
+    validateForms('#callback__form');
 
-    //Masked Input
+    //Modal close and open
 
-    $('input[name=phone]').mask("+7 (999) 999-9999");
+    $('[data-modal=callback]').on('click', function() {
+        $('.overlay, #callback').fadeIn('slow');
+    });
+    $('.callback__close').on('click', function() {
+        $('.overlay, #callback, #thanks').fadeOut('fast');
+    });
+
+    //Mailer PHP
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 
     //Anchor, smoth scroll and pageup
 
