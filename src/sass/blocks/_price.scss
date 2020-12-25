@@ -6,7 +6,7 @@
     &__offer {
         margin-top: 34px;
         display: grid;
-        grid-template: minmax(355px, auto) / repeat(auto-fill, 265px);
+        grid-template: minmax(355px, auto) / repeat(4, 265px);
         grid-auto-rows: minmax(355px, auto);
         grid-gap: 26px;
         &-card {

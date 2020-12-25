@@ -4,16 +4,15 @@
         margin: 0 144px;
     }
     &__items {
-        margin-top: 36px;
-        display: grid;
-        grid-template: minmax(368px, auto) / repeat(auto-fill, 360px);
-        grid-auto-rows: minmax(368px, auto);
-        grid-gap: 30px;
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        min-height: 368px;
     }
     &__item {
+        margin-top: 36px;
         display: grid;
-        grid-template: 210px 1fr / 1fr;
+        grid-template: 210px 1fr / minmax(300px, 360px);
         row-gap: 28px;
         &-img {
             width: 100%;

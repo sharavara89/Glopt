@@ -1,3 +1,21 @@
+window.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.menu__items'),
+    menuItem = document.querySelectorAll('.menu__item'),
+    hamburger = document.querySelector('.menu__hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('menu__hamburger_active');
+        menu.classList.toggle('menu__items_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('menu__hamburger_active');
+            menu.classList.toggle('menu__items_active');
+        });
+    });
+});
+
 //Slick slider
 
 $(document).ready(function () {
@@ -11,31 +29,33 @@ $(document).ready(function () {
 		nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 992,
 				settings: {
-					arrows: false,
+                    arrows: false,
+                    dots: true,
 					centerMode: true,
 					centerPadding: '40px',
 					slidesToShow: 3
 				}
         	},
-			{
-				breakpoint: 480,
+/* 			{
+				breakpoint: 576,
 				settings: {
-					arrows: false,
+                    arrows: false,
+                    dots: true,
 					centerMode: true,
 					centerPadding: '40px',
 					slidesToShow: 1
 				}
-			}
+			} */
         ]
     });
 
-    //Masked phone input
+//Masked phone input
 
     $('input[name=phone]').mask("+7 (999) 999-9999");
     
-    //Validation Plugin
+//Validation Plugin
 	
 	function validateForms(form) {
         $(form).validate({
@@ -68,7 +88,7 @@ $(document).ready(function () {
     validateForms('#questions__form');
     validateForms('#callback__form');
 
-    //Modal close and open
+//Modal close and open
 
     $('[data-modal=callback]').on('click', function() {
         $('.overlay, #callback').fadeIn('slow');
@@ -77,7 +97,7 @@ $(document).ready(function () {
         $('.overlay, #callback, #thanks').fadeOut('fast');
     });
 
-    //Mailer PHP
+//Mailer PHP
 
     $('form').submit(function(e) {
         e.preventDefault();
@@ -95,21 +115,39 @@ $(document).ready(function () {
         return false;
     });
 
-    //Anchor, smoth scroll and pageup
+//Anchor with fixed header
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
+        if($(this).scrollTop() > 93)  {
+            if($('header').hasClass('header_fixed')){}
+            else {
+                $('.header').fadeOut(0).addClass('header_fixed').fadeIn();
+            }
+        }
+        else {
+            $('.header').removeClass('header_fixed', 300);
+        }
         if ($(this).scrollTop() > 1200) {
             $('.anchor').fadeIn();
-        } else {
+        }
+        else {
             $('.anchor').fadeOut();
         }
     });
 
     $(function(){
-        $("a[href=#anchor]").click(function(){
+        $("a[href=#up]").click(function(){
                 const _href = $(this).attr("href");
                 $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
                 return false;
         });
     });
 });
+
+//Smooth-scroll
+
+var scroll = new SmoothScroll('a[href*="#"]');
+
+//Wow.js
+
+new WOW().init();

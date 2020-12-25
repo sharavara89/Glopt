@@ -1,11 +1,11 @@
 .questions {
     padding: 60px 0 80px;
-    height: 438px;
+    min-height: 438px;
     background: url('../img/contacts_bg.jpg') center (center / cover) no-repeat;
     &__form {
         margin: 0 122px;
         display: grid;
-        grid-template: 68px minmax(230px, auto) / minmax(300px, 896px);
+        grid-template: 68px minmax(230px, auto) / 1fr;
         background-color: rgba(255, 255, 255, .7);
         &-hat {
             padding: 20px 0;
@@ -25,7 +25,7 @@
             margin: 18px 42px 25px;
             display: grid;
             grid-template: minmax(45px, auto) 71px 62px / repeat(3, 1fr);
-            column-gap: 6px;
+            grid-gap: 8px 6px;
         }
         &-items {
             display: grid;
@@ -58,8 +58,8 @@
             }
         }
         &-submit {
-            margin-top: 17px;
             justify-self: center;
+            align-self: end;
             grid-area: 3 / 2 / 4 / 3;
         }
         .error {
