@@ -22,9 +22,10 @@
             }
         }
         &-wrapper {
-            margin: 18px 42px 25px;
+            position: relative;
+            margin: 18px 42px 87px;
             display: grid;
-            grid-template: minmax(45px, auto) 71px 62px / repeat(3, 1fr);
+            grid-template: minmax(45px, auto) 71px / repeat(3, 1fr);
             grid-gap: 8px 6px;
         }
         &-items {
@@ -58,9 +59,10 @@
             }
         }
         &-submit {
-            justify-self: center;
-            align-self: end;
-            grid-area: 3 / 2 / 4 / 3;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            bottom: -17px;
         }
         .error {
             border: 1px solid red;

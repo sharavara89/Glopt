@@ -38,16 +38,6 @@ $(document).ready(function () {
 					slidesToShow: 3
 				}
         	},
-/* 			{
-				breakpoint: 576,
-				settings: {
-                    arrows: false,
-                    dots: true,
-					centerMode: true,
-					centerPadding: '40px',
-					slidesToShow: 1
-				}
-			} */
         ]
     });
 

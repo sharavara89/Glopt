@@ -10,9 +10,8 @@
     &__nameplate {
         position: absolute;
         padding: 28px 40px 30px;
-        top: 50%;
+        top: 29%;
         left: 55%;
-        transform: translateY(-50%);
         width: 310px;
         height: 158px;
         text-align: left;
@@ -23,8 +22,8 @@
             content: '';
             position: absolute;
             top: 50%;
-            left: -20px;
-            transform: translateY(-50%);
+            left: 0;
+            transform: translate(-100%, -50%);
             width: 0;
             height: 0;
             border-top: 20px solid transparent;
