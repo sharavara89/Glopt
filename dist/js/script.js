@@ -1,3 +1,5 @@
+// Hamburger and toggle menu
+
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu__items'),
     menuItem = document.querySelectorAll('.menu__item'),
@@ -105,7 +107,7 @@ $(document).ready(function () {
         return false;
     });
 
-//Anchor with fixed header
+//Fixed header
 
     $(window).scroll(function () {
         if($(this).scrollTop() > 93)  {
@@ -117,27 +119,15 @@ $(document).ready(function () {
         else {
             $('.header').removeClass('header_fixed', 300);
         }
-        if ($(this).scrollTop() > 1200) {
-            $('.anchor').fadeIn();
-        }
-        else {
-            $('.anchor').fadeOut();
-        }
     });
-
-    $(function(){
-        $("a[href=#up]").click(function(){
-                const _href = $(this).attr("href");
-                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-                return false;
-        });
-    });
-});
 
 //Smooth-scroll
 
-var scroll = new SmoothScroll('a[href*="#"]');
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 200
+    });
 
 //Wow.js
 
-new WOW().init();
+    new WOW().init();
+});
