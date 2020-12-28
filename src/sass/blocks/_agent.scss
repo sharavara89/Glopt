@@ -2,6 +2,7 @@
     min-height: 350px;
     background: url('../img/agent_bg.jpg') center (center / cover) no-repeat;
     padding: 58px 0 75px 0;
+    overflow: hidden;
     &__circle {
         margin: 0 auto;
         width: 102px;

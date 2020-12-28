@@ -3,6 +3,7 @@
     min-height: 100vh;
     padding: 132px 0 178px 0;
     background: url('../img/main_bg.jpg') center (center / cover) no-repeat;
+    overflow: hidden;
     &__title {
         text-align: center;
         font-size: 24px;

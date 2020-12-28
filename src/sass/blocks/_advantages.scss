@@ -1,6 +1,7 @@
 .advantages {
     padding: 58px 0 50px 0;
     background-color: #f3f3f3;
+    overflow: hidden;
     &__items {
         display: grid;
         grid-template: repeat(4, minmax(62px, auto)) / repeat(2, 1fr);
