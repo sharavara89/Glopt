@@ -80,19 +80,15 @@ $(document).ready(function () {
     validateForms('#questions__form');
     validateForms('#callback__form');
 
-//Modal close and open
-
-    $('[data-modal=callback]').on('click', function() {
-        $('.overlay, #callback').fadeIn('slow');
-    });
-    $('.callback__close').on('click', function() {
-        $('.overlay, #callback, #thanks').fadeOut('fast');
-    });
-
 //Mailer PHP
 
     $('form').submit(function(e) {
         e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+        
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
@@ -105,6 +101,15 @@ $(document).ready(function () {
             $('form').trigger('reset');
         });
         return false;
+    });
+
+//Close and open modal windows, and thanks window
+
+    $('[data-modal=callback]').on('click', function() {
+        $('.overlay, #callback').fadeIn('slow');
+    });
+    $('.callback__close').on('click', function() {
+        $('.overlay, #callback, #thanks').fadeOut('fast');
     });
 
 //Fixed header
