@@ -1,11 +1,3 @@
-@charset "UTF-8";
-
-:root {
-	--animate-duration: 1s;
-	--animate-delay: 1s;
-	--animate-repeat: 1;
-}
-
 .animate__animated {
 	animation-duration: 1s;
 	animation-duration: var(--animate-duration);
