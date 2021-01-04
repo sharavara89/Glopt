@@ -3,15 +3,17 @@
     height: 23px;
     &__items {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         list-style-type: none;
     }
     &__item {
         border-right: 1px dotted rgba($color: #ffffff, $alpha: 0.4);
-        padding: 0 12px 0 12px;
+        padding: 0 12px;
         &:last-child {
             border-right: none;
+            padding-right: 0;
+        }
+        &:first-child {
+            padding-left: 0;
         }
     }
     &__link {
