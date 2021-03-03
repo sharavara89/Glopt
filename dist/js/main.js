@@ -2,8 +2,8 @@
 
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu__items'),
-    menuItem = document.querySelectorAll('.menu__item'),
-    hamburger = document.querySelector('.menu__hamburger');
+          menuItem = document.querySelectorAll('.menu__item'),
+          hamburger = document.querySelector('.menu__hamburger');
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('menu__hamburger_active');
