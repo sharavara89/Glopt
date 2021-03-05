@@ -25,13 +25,12 @@
             position: relative;
             margin: 18px 42px 87px;
             display: grid;
-            grid-template: minmax(45px, auto) 71px / repeat(3, 1fr);
+            grid-template: minmax(45px, auto) minmax(71px, auto) / repeat(3, 1fr);
             grid-gap: 8px 6px;
         }
         &-items {
             display: grid;
-            grid-template: 45px / 1fr;
-            grid-auto-rows: auto;
+            grid-template: 45px / auto;
             input {
                 padding: 0 28px;
                 border-radius: 50px;
@@ -45,6 +44,8 @@
             }
         }
         &-textarea {
+            display: grid;
+            grid-template: 71px / auto;
             grid-area: 2 / 1 / 3 / 4;
             textarea {
                 padding: 18px 28px;
@@ -68,7 +69,7 @@
             border: 1px solid red;
         }
         label.error {
-            margin: 10px 0;
+            margin: 5px 0;
             border: none;
             text-align: center;
             font-size: 14px;
