@@ -77,7 +77,7 @@ $(document).ready(function () {
                     email: "Адрес должен быть в формате example@domain.com"
                 },
                 text: {
-                    required: "Пожалуйста, введите ваше сообщение",
+                    required: "Пожалуйста, введите свое сообщение",
                     minlength: jQuery.validator.format("Ведите минимум {0} символов!")
                 }
             }
